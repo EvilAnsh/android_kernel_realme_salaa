@@ -102,12 +102,11 @@ static char aw86907_ram_name[5][30] ={
 {"aw8697_haptic_170.bin"},
 };
 
-
-static char __maybe_unused aw86907_long_sound_rtp_name[5][30] = {
-	{ "aw8697_long_sound_168.bin" },
-	{ "aw8697_long_sound_170.bin" },
-	{ "aw8697_long_sound_173.bin" },
-	{ "aw8697_long_sound_175.bin" },
+static char aw86907_long_sound_rtp_name[5][30] ={ 
+    {"aw8697_long_sound_168.bin"},
+    {"aw8697_long_sound_170.bin"},
+    {"aw8697_long_sound_173.bin"},
+    {"aw8697_long_sound_175.bin"},
 };
 
 static char aw86907_old_steady_test_rtp_name_0815[11][60] ={ 
@@ -152,6 +151,7 @@ static char aw86907_old_steady_test_rtp_name_0832[11][60] ={
     {"aw8697_old_steady_test_RTP_52_235Hz.bin"},
 };
 
+   
 static char aw86907_high_temp_high_humidity_0832[11][60] ={ 
     {"aw8697_high_temp_high_humidity_channel_RTP_51_225Hz.bin"},
     {"aw8697_high_temp_high_humidity_channel_RTP_51_226Hz.bin"},
@@ -184,73 +184,44 @@ static char aw86907_ringtone_rtp_f0_170_name[][AW86907_RTP_NAME_MAX] ={
     {"aw8697_Receive_channel_RTP_15_170.bin"},
     {"aw8697_Splash_channel_RTP_16_170.bin"},
 
-static char aw86907_high_temp_high_humidity_0832[11][60] = {
-	{ "aw8697_high_temp_high_humidity_channel_RTP_51_225Hz.bin" },
-	{ "aw8697_high_temp_high_humidity_channel_RTP_51_226Hz.bin" },
-	{ "aw8697_high_temp_high_humidity_channel_RTP_51_227Hz.bin" },
-	{ "aw8697_high_temp_high_humidity_channel_RTP_51_228Hz.bin" },
-	{ "aw8697_high_temp_high_humidity_channel_RTP_51_229Hz.bin" },
-	{ "aw8697_high_temp_high_humidity_channel_RTP_51_230Hz.bin" },
-	{ "aw8697_high_temp_high_humidity_channel_RTP_51_231Hz.bin" },
-	{ "aw8697_high_temp_high_humidity_channel_RTP_51_232Hz.bin" },
-	{ "aw8697_high_temp_high_humidity_channel_RTP_51_233Hz.bin" },
-	{ "aw8697_high_temp_high_humidity_channel_RTP_51_234Hz.bin" },
-	{ "aw8697_high_temp_high_humidity_channel_RTP_51_235Hz.bin" },
-};
-static char __maybe_unused aw86907_ringtone_rtp_f0_170_name[][AW86907_RTP_NAME_MAX] = {
-	{ "aw8697_rtp.bin" },
-	{ "aw8697_Hearty_channel_RTP_1_170.bin" },
-	{ "aw8697_Instant_channel_RTP_2_170.bin" },
-	{ "aw8697_Music_channel_RTP_3_170.bin" },
-	{ "aw8697_Percussion_channel_RTP_4_170.bin" },
-	{ "aw8697_Ripple_channel_RTP_5_170.bin" },
-	{ "aw8697_Bright_channel_RTP_6_170.bin" },
-	{ "aw8697_Fun_channel_RTP_7_170.bin" },
-	{ "aw8697_Glittering_channel_RTP_8_170.bin" },
-	{ "aw8697_Granules_channel_RTP_9_170.bin" },
-	{ "aw8697_Harp_channel_RTP_10_170.bin" },
-	{ "aw8697_Impression_channel_RTP_11_170.bin" },
-	{ "aw8697_Ingenious_channel_RTP_12_170.bin" },
-	{ "aw8697_Joy_channel_RTP_13_170.bin" },
-	{ "aw8697_Overtone_channel_RTP_14_170.bin" },
-	{ "aw8697_Receive_channel_RTP_15_170.bin" },
-	{ "aw8697_Splash_channel_RTP_16_170.bin" },
-	{ "aw8697_About_School_RTP_17_170.bin" },
-	{ "aw8697_Bliss_RTP_18_170.bin" },
-	{ "aw8697_Childhood_RTP_19_170.bin" },
-	{ "aw8697_Commuting_RTP_20_170.bin" },
-	{ "aw8697_Dream_RTP_21_170.bin" },
-	{ "aw8697_Firefly_RTP_22_170.bin" },
-	{ "aw8697_Gathering_RTP_23_170.bin" },
-	{ "aw8697_Gaze_RTP_24_170.bin" },
-	{ "aw8697_Lakeside_RTP_25_170.bin" },
-	{ "aw8697_Lifestyle_RTP_26_170.bin" },
-	{ "aw8697_Memories_RTP_27_170.bin" },
-	{ "aw8697_Messy_RTP_28_170.bin" },
-	{ "aw8697_Night_RTP_29_170.bin" },
-	{ "aw8697_Passionate_Dance_RTP_30_170.bin" },
-	{ "aw8697_Playground_RTP_31_170.bin" },
-	{ "aw8697_Relax_RTP_32_170.bin" },
-	{ "aw8697_Reminiscence_RTP_33_170.bin" },
-	{ "aw8697_Silence_From_Afar_RTP_34_170.bin" },
-	{ "aw8697_Silence_RTP_35_170.bin" },
-	{ "aw8697_Stars_RTP_36_170.bin" },
-	{ "aw8697_Summer_RTP_37_170.bin" },
-	{ "aw8697_Toys_RTP_38_170.bin" },
-	{ "aw8697_Travel_RTP_39_170.bin" },
-	{ "aw8697_Vision_RTP_40_170.bin" },
-	{ "aw8697_reserved.bin" },
-	{ "aw8697_reserved.bin" },
-	{ "aw8697_reserved.bin" },
-	{ "aw8697_reserved.bin" },
-	{ "aw8697_reserved.bin" },
-	{ "aw8697_reserved.bin" },
-	{ "aw8697_reserved.bin" },
-	{ "aw8697_Simple_channel_RTP_48_170.bin" },
-	{ "aw8697_Pure_RTP_49_170.bin" },
-	{ "barca_alarm_ring_RTP_120_170.bin" },
-	{ "barca_incoming_ring_RTP_121_170.bin" },
-	{ "barca_notice_ring_RTP_122_170.bin" },
+    {"aw8697_About_School_RTP_17_170.bin"},
+    {"aw8697_Bliss_RTP_18_170.bin"},
+    {"aw8697_Childhood_RTP_19_170.bin"},
+    {"aw8697_Commuting_RTP_20_170.bin"},
+    {"aw8697_Dream_RTP_21_170.bin"},
+    {"aw8697_Firefly_RTP_22_170.bin"},
+    {"aw8697_Gathering_RTP_23_170.bin"},
+    {"aw8697_Gaze_RTP_24_170.bin"},
+    {"aw8697_Lakeside_RTP_25_170.bin"},
+    {"aw8697_Lifestyle_RTP_26_170.bin"},
+    {"aw8697_Memories_RTP_27_170.bin"},
+    {"aw8697_Messy_RTP_28_170.bin"},
+    {"aw8697_Night_RTP_29_170.bin"},
+    {"aw8697_Passionate_Dance_RTP_30_170.bin"},
+    {"aw8697_Playground_RTP_31_170.bin"},
+    {"aw8697_Relax_RTP_32_170.bin"},
+    {"aw8697_Reminiscence_RTP_33_170.bin"},
+    {"aw8697_Silence_From_Afar_RTP_34_170.bin"},
+    {"aw8697_Silence_RTP_35_170.bin"},
+    {"aw8697_Stars_RTP_36_170.bin"},
+    {"aw8697_Summer_RTP_37_170.bin"},
+    {"aw8697_Toys_RTP_38_170.bin"},
+    {"aw8697_Travel_RTP_39_170.bin"},
+    {"aw8697_Vision_RTP_40_170.bin"},
+    
+    {"aw8697_reserved.bin"},
+    {"aw8697_reserved.bin"},
+    {"aw8697_reserved.bin"},
+    {"aw8697_reserved.bin"},
+    {"aw8697_reserved.bin"},
+    {"aw8697_reserved.bin"},
+    
+    {"aw8697_reserved.bin"},
+    {"aw8697_Simple_channel_RTP_48_170.bin"},
+    {"aw8697_Pure_RTP_49_170.bin"},
+    {"barca_alarm_ring_RTP_120_170.bin"},
+    {"barca_incoming_ring_RTP_121_170.bin"},
+    {"barca_notice_ring_RTP_122_170.bin"},
 };
 
 #ifdef OPLUS_FEATURE_CHG_BASIC
@@ -3458,9 +3429,9 @@ const struct firmware *aw86907_old_work_file_load_accord_f0(struct aw86907 *aw86
 
 const struct firmware *aw86907_rtp_load_file_accord_f0(struct aw86907 *aw86907)
 {
-    const struct firmware *rtp_file __maybe_unused;
-    unsigned int f0_file_num __maybe_unused = 1024;
-    int ret __maybe_unused = -1;
+    const struct firmware *rtp_file;
+    unsigned int f0_file_num = 1024;
+    int ret = -1;
 
     if (aw86907->rtp_file_num == AW86907_WAVEFORM_INDEX_OLD_STEADY
          || aw86907->rtp_file_num == AW86907_WAVEFORM_INDEX_HIGH_TEMP)
