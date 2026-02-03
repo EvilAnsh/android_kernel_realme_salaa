@@ -3,7 +3,6 @@
 function compile() 
 {
 rm -rf AnyKernel
-source ~/.bashrc && source ~/.profile
 TANGGAL=$(date +"%Y%m%d-%H")
 export LC_ALL=C && export USE_CCACHE=1
 export ARCH=arm64
